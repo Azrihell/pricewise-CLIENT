@@ -1,5 +1,8 @@
+'use client'
+
 import 'react-responsive-carousel/lib/styles/carousel.min.css'
 import { Carousel } from 'react-responsive-carousel'
+import Image from 'next/image'
 
 const heroImages = [
   { imgUrl: '/assets/images/hero-1.svg', alt: 'smartwatch' },
