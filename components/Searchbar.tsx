@@ -1,7 +1,14 @@
 'use client'
 
+import { FormEvent, useState } from "react"
+
 const Searchbar = () => {
-  const handleSubmit = () => { }
+
+  const [searchPrompt, setSearchPrompt] = useState('second')
+  const handleSubmit = (event: FormEvent<HTMLFormElement>) => {
+    event.preventDefault
+  }
+  
   return (
     <form
       className='flex flex-wrap gap-4 mt-12'
@@ -9,6 +16,8 @@ const Searchbar = () => {
 
       <input
         type="text"
+        value={searchPrompt}
+        onChange={(e) => setSearchPrompt(e.target.value)}
         placeholder="Enter product link"
         className="searchbar-input"
       />
