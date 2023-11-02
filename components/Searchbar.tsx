@@ -16,7 +16,7 @@ const isValidAmazonProductURL = (url: string) => {
 
 const Searchbar = () => {
 
-  const [searchPrompt, setSearchPrompt] = useState('second')
+  const [searchPrompt, setSearchPrompt] = useState('')
   const handleSubmit = (event: FormEvent<HTMLFormElement>) => {
     event.preventDefault
 
