@@ -27,6 +27,9 @@ const Searchbar = () => {
 
     try {
       setIsLoading(true)
+
+      // scrape the product page
+
     } catch (error) {
 
     } finally { setIsLoading(false) }
@@ -45,10 +48,10 @@ const Searchbar = () => {
         className="searchbar-input"
       />
 
-      <button 
-      type="submit" 
-      className="searchbar-btn"
-      disabled={searchPrompt === ''}
+      <button
+        type="submit"
+        className="searchbar-btn"
+        disabled={searchPrompt === ''}
       >
         {isLoading ? 'Searching...' : 'Search'}
       </button>
